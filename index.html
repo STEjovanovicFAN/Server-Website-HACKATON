@@ -14,7 +14,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+	function myFunction(){
+		w3.hide('#message');
+		w3.hide('#but1');
+	}
+	
+</script>
 <body>
 	<div class="jumbotron text-center">
 	  <h1>TEAM OMEGALUL</h1>
@@ -34,12 +42,13 @@
 				  <tr>
 					  <!-- colum inside the row -->
 					 <th class="small-12 large-6 first columns">
-						<button type= "button">Remove element</button>
+						 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+						<button id = "but1" onclick ="myFunction()">Remove element</button>
 					 </th>
 				     <th class="small-12 large-6 last columns">
 						<span style="display:inline-block; width: 16px;"></span>
 					 </th>
-					 <th class="small-12 large-6 last columns">
+					 <th class="small-12 large-6 last columns" id="message">
 						<h4 style="color: blue"> RE: You've got mail in your mail box </h4>
 					 </th>
 					 
